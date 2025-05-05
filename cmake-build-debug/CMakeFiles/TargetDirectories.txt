@@ -1,0 +1,3 @@
+C:/Users/gbluc/CLionProjects/To-Do List/cmake-build-debug/CMakeFiles/To_Do_List.dir
+C:/Users/gbluc/CLionProjects/To-Do List/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gbluc/CLionProjects/To-Do List/cmake-build-debug/CMakeFiles/rebuild_cache.dir
