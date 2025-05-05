@@ -55,18 +55,6 @@ build CMakeFiles/To_Do_List.dir/main.cpp.obj: CXX_COMPILER__To_Do_List_unscanned
   OBJECT_DIR = CMakeFiles\To_Do_List.dir
   OBJECT_FILE_DIR = CMakeFiles\To_Do_List.dir
 
-build CMakeFiles/To_Do_List.dir/Task.cpp.obj: CXX_COMPILER__To_Do_List_unscanned_Debug C$:/Users/gbluc/CLionProjects/To-Do$ List/Task.cpp || cmake_object_order_depends_target_To_Do_List
-  DEP_FILE = CMakeFiles\To_Do_List.dir\Task.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\To_Do_List.dir
-  OBJECT_FILE_DIR = CMakeFiles\To_Do_List.dir
-
-build CMakeFiles/To_Do_List.dir/TaskManager.cpp.obj: CXX_COMPILER__To_Do_List_unscanned_Debug C$:/Users/gbluc/CLionProjects/To-Do$ List/TaskManager.cpp || cmake_object_order_depends_target_To_Do_List
-  DEP_FILE = CMakeFiles\To_Do_List.dir\TaskManager.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\To_Do_List.dir
-  OBJECT_FILE_DIR = CMakeFiles\To_Do_List.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target To_Do_List
@@ -75,7 +63,7 @@ build CMakeFiles/To_Do_List.dir/TaskManager.cpp.obj: CXX_COMPILER__To_Do_List_un
 #############################################
 # Link the executable To_Do_List.exe
 
-build To_Do_List.exe: CXX_EXECUTABLE_LINKER__To_Do_List_Debug CMakeFiles/To_Do_List.dir/main.cpp.obj CMakeFiles/To_Do_List.dir/Task.cpp.obj CMakeFiles/To_Do_List.dir/TaskManager.cpp.obj
+build To_Do_List.exe: CXX_EXECUTABLE_LINKER__To_Do_List_Debug CMakeFiles/To_Do_List.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\To_Do_List.dir

@@ -12,6 +12,8 @@ class Task {
     std::string description;
     bool completed;
 
+public:
+
     Task() {
         completed = false;
     }
