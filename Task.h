@@ -23,7 +23,7 @@ public:
         completed = false;
     }
 
-    void marlCompleted() {
+    void markCompleted() {
         completed = true;
     }
 

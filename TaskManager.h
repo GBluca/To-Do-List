@@ -20,22 +20,37 @@ public:
         this->tasks.emplace_back(description);
     }
 
-    void listTask() {
-
-        if(!tasks.empty()) {
-            for(size_t i=0;i<tasks.size();i++) {
-                std::cout << "task n°: " << i+1 << "status: " << tasks[i].isCompleted() ? "done" : "to do" << std::endl
-                << "descroption :" << tasks[i].getDescription() ;
+        void listTask() const{
+            if(!tasks.empty()) {
+                for(size_t i = 0; i < tasks.size(); i++) {
+                    std::cout << "\nTask #" << i+1
+                              << "\nStatus: " << (tasks[i].isCompleted() ? "Done" : "To do")
+                              << "\nDescription: " << tasks[i].getDescription()
+                              << "\n";  // Aggiunge un newline finale
+                }
+            } else {
+                std::cout << "Nessun task presente!\n";
             }
         }
+
+    bool markTaskCompleted(int index) {
+        if(index < 1 || index > tasks.size()) {
+            return false;  // Indice non valido
+        }
+        tasks[index-1].markCompleted();
+        return true;  // Operazione riuscita
     }
 
-    void markTaskCompleted(int index) {
-        tasks[index].marlCompleted();
+    bool removeTask(int index) {
+        if(index < 0 || index >= tasks.size() + 1 ) {
+            return false;
+        }
+        tasks.erase(tasks.begin() + index - 1 );
+        return true;
     }
 
-    void removeTask(int index) {
-        tasks.erase(tasks.begin() + index);
+    size_t taskCount() const {
+        return tasks.size();
     }
 
 };
